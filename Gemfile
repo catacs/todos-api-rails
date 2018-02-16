@@ -44,7 +44,10 @@ group :test do
   gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'database_cleaner'
-  # Use postgresql as database for Active record in production
+end
+
+group :production do
+  # Use postgresql as database for active record in production
   gem 'pg'
 end
 
